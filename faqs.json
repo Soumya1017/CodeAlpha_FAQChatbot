@@ -309,7 +309,7 @@
   },
   {
     "question": "How do I rate a product?",
-    "answer": "Open My Orders, choose the delivered item, and tap the stars under Rate this Product. You can add a written review too."
+    "answer": "To rate a product, open My Orders, choose the delivered item, and tap the stars under Rate this Product. To see the ratings and reviews of any product, scroll to Ratings and Reviews on its product page."
   },
   {
     "question": "Can I review a product I did not buy?",
@@ -406,5 +406,93 @@
   {
     "question": "Do you deliver abroad?",
     "answer": "No, we currently deliver only within India."
+  },
+  {
+    "question": "How can I check my order?",
+    "answer": "Go to My Orders and click Track Order. You will also get a tracking link by email and SMS once your order ships."
+  },
+  {
+    "question": "How can I check my order status?",
+    "answer": "Go to My Orders and click Track Order. You will also get a tracking link by email and SMS once your order ships."
+  },
+  {
+    "question": "What is the status of my order?",
+    "answer": "Go to My Orders and click Track Order. You will also get a tracking link by email and SMS once your order ships."
+  },
+  {
+    "question": "Order status",
+    "answer": "Go to My Orders and click Track Order. You will also get a tracking link by email and SMS once your order ships."
+  },
+  {
+    "question": "Where is my parcel?",
+    "answer": "Go to My Orders and click Track Order. You will also get a tracking link by email and SMS once your order ships."
+  },
+  {
+    "question": "Where is my shipment?",
+    "answer": "Go to My Orders and click Track Order. You will also get a tracking link by email and SMS once your order ships."
+  },
+  {
+    "question": "Where is my delivery?",
+    "answer": "Go to My Orders and click Track Order. You will also get a tracking link by email and SMS once your order ships."
+  },
+  {
+    "question": "How can I see my orders?",
+    "answer": "Log in and open My Orders to see your full order history, invoices, and delivery status."
+  },
+  {
+    "question": "How to view my order history?",
+    "answer": "Log in and open My Orders to see your full order history, invoices, and delivery status."
+  },
+  {
+    "question": "Show my previous orders",
+    "answer": "Log in and open My Orders to see your full order history, invoices, and delivery status."
+  },
+  {
+    "question": "How many days for delivery?",
+    "answer": "Standard delivery takes 3 to 5 working days. Express delivery takes 1 to 2 working days."
+  },
+  {
+    "question": "How many days will my order take to arrive?",
+    "answer": "Standard delivery takes 3 to 5 working days. Express delivery takes 1 to 2 working days."
+  },
+  {
+    "question": "Which payment options do you have?",
+    "answer": "We accept credit and debit cards, UPI, net banking, wallets, and cash on delivery."
+  },
+  {
+    "question": "How can I pay for my order?",
+    "answer": "We accept credit and debit cards, UPI, net banking, wallets, and cash on delivery."
+  },
+  {
+    "question": "What is the customer care number?",
+    "answer": "Email support@shopeasy.example or call 1800-123-456, Monday to Saturday, 9 AM to 6 PM."
+  },
+  {
+    "question": "Can I talk to a human?",
+    "answer": "Email support@shopeasy.example or call 1800-123-456, Monday to Saturday, 9 AM to 6 PM."
+  },
+  {
+    "question": "How can I speak to customer care?",
+    "answer": "Email support@shopeasy.example or call 1800-123-456, Monday to Saturday, 9 AM to 6 PM."
+  },
+  {
+    "question": "How to sign up?",
+    "answer": "Click Sign Up at the top of the page, enter your name, email, and phone number, and verify with the OTP we send you."
+  },
+  {
+    "question": "How can I register?",
+    "answer": "Click Sign Up at the top of the page, enter your name, email, and phone number, and verify with the OTP we send you."
+  },
+  {
+    "question": "Are there any offers?",
+    "answer": "Yes, check the Offers page for current coupons. Enter the code at checkout to apply the discount."
+  },
+  {
+    "question": "Show product ratings",
+    "answer": "To rate a product, open My Orders, choose the delivered item, and tap the stars under Rate this Product. To see the ratings and reviews of any product, scroll to Ratings and Reviews on its product page."
+  },
+  {
+    "question": "How can I see the rating of a product?",
+    "answer": "To rate a product, open My Orders, choose the delivered item, and tap the stars under Rate this Product. To see the ratings and reviews of any product, scroll to Ratings and Reviews on its product page."
   }
 ]

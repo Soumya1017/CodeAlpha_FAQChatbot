@@ -10,8 +10,10 @@ THRESHOLD = 0.2
 NO_MATCH = "Sorry, I didn't understand that. Try rephrasing your question."
 
 stemmer = PorterStemmer()
-# Keep "where": "Where is my order?" (tracking) must differ from "How can I order?"
-STOP_WORDS = list(ENGLISH_STOP_WORDS - {"where"})
+# Keep "where" and "see": they separate tracking or viewing orders from placing an order
+STOP_WORDS = list(ENGLISH_STOP_WORDS - {"where", "see"})
+# These words alone are not enough to count as a match
+QUESTION_WORDS = {"where", "see"}
 
 
 def tokenize(text):
@@ -27,6 +29,7 @@ class FAQBot:
         # every word used in the FAQ questions, used to fix spelling mistakes
         self.vocab = sorted({w for q in self.questions for w in tokenize(q)})
         self.vectorizer = TfidfVectorizer(stop_words=STOP_WORDS)
+        self.analyzer = self.vectorizer.build_analyzer()
         self.vectors = self.vectorizer.fit_transform(
             [self.preprocess(q) for q in self.questions]
         )
@@ -41,16 +44,20 @@ class FAQBot:
         words = [self.correct(w) for w in tokenize(text)]
         return " ".join(stemmer.stem(w) for w in words)
 
-    def answer(self, user_input):
-        user_vector = self.vectorizer.transform([self.preprocess(user_input)])
-        scores = cosine_similarity(user_vector, self.vectors)[0]
-        best = scores.argmax()
-        if scores[best] > THRESHOLD:
-            return self.answers[best]
-        return NO_MATCH
+    def content_words(self, text):
+        return set(self.analyzer(self.preprocess(text))) - QUESTION_WORDS
 
     def best_question(self, user_input):
         user_vector = self.vectorizer.transform([self.preprocess(user_input)])
         scores = cosine_similarity(user_vector, self.vectors)[0]
         best = scores.argmax()
         return self.questions[best], float(scores[best])
+
+    def answer(self, user_input):
+        question, score = self.best_question(user_input)
+        if score <= THRESHOLD:
+            return NO_MATCH
+        # the match must share at least one real word with the user's question
+        if not self.content_words(user_input) & self.content_words(question):
+            return NO_MATCH
+        return self.answers[self.questions.index(question)]
