@@ -12,7 +12,7 @@ An FAQ chatbot for a fictional online store, **ShopEasy**, built for the CodeAlp
 5. The matching answer is returned. If the best score is below 0.2, the bot says it did not understand.
 
 ## Features
-- 102 FAQ entries covering orders, shipping, payments, returns, cancellations, reviews and accounts
+- 124 FAQ entries covering orders, shipping, payments, returns, cancellations, reviews and accounts
 - Spelling correction for small typos (e.g. "reiviews" becomes "reviews")
 - Terminal chatbot (`chatbot.py`)
 - Streamlit chat window with sample questions and a Clear chat button (`app.py`)
