@@ -11,7 +11,8 @@ NO_MATCH = "Sorry, I didn't understand that. Try rephrasing your question."
 
 stemmer = PorterStemmer()
 # Keep "where" and "see": they separate tracking or viewing orders from placing an order
-STOP_WORDS = list(ENGLISH_STOP_WORDS - {"where", "see"})
+# "doe" is what the stemmer makes of "does", so both forms are listed
+STOP_WORDS = list(ENGLISH_STOP_WORDS - {"where", "see"}) + ["does", "doe", "like"]
 # These words alone are not enough to count as a match
 QUESTION_WORDS = {"where", "see"}
 
