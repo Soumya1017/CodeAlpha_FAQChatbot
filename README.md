@@ -3,6 +3,7 @@
 An FAQ chatbot for a fictional online store, **ShopEasy**, built for the CodeAlpha AI internship (Task 2).
 
 **Live demo:** https://codealphafaqchatbot-3skj2p7zzbcauqy9ktdtkb.streamlit.app/
+   _If the app is asleep, click "Yes, get this app back up!" and wait about a minute._
 
 ## How it works
 1. FAQs (questions and answers) are stored in `faqs.json`.
